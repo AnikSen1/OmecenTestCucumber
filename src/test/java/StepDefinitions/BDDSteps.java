@@ -54,8 +54,8 @@ public class BDDSteps {
 	@When("^user enter userName and Password$")
 	public void user_enter_user_name_and_password() {
 		lp= new LoginPage(driver);
-		lp.userName("admin");
-		lp.pWord("admin_test");	
+		lp.userName("uname");
+		lp.pWord("pword");	
 	}
 
 	@Then("^click on submit button$")
