@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="25.261">
-    <testcase classname="Login test in the background" name="As a user I want to see New Invoice page" time="10.01">
-        <failure message="Cannot locate an element using xpath=//input[@placeholder='Username']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given app is open...........................................................passed
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="5.75">
+    <testcase classname="Login test in the background" name="As a user I want to see New Invoice page" time="3.263">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given app is open...........................................................passed
 When user enter userName and Password.......................................failed
 Then click on submit button.................................................skipped
 When user click on invoice page.............................................skipped
@@ -9,25 +9,17 @@ Then user validate the invoice title........................................skip
 And user close the app......................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@placeholder='Username']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)
-	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)
+	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)
 	at ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="Login test in the background" name="As a user I want to see Payments  page" time="8.226">
-        <failure message="Cannot locate an element using xpath=//input[@placeholder='Username']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given app is open...........................................................passed
+    <testcase classname="Login test in the background" name="As a user I want to see Payments  page" time="1.083">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given app is open...........................................................passed
 When user enter userName and Password.......................................failed
 Then click on submit button.................................................skipped
 When user click on payement page............................................skipped
@@ -35,25 +27,17 @@ Then user validate payment title............................................skip
 And user close the app......................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@placeholder='Username']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)
-	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)
+	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)
 	at ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="Login test in the background" name="As a user I want to see Receipts  page" time="6.911">
-        <failure message="Cannot locate an element using xpath=//input[@placeholder='Username']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given app is open...........................................................passed
+    <testcase classname="Login test in the background" name="As a user I want to see Receipts  page" time="1.239">
+        <failure message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given app is open...........................................................passed
 When user enter userName and Password.......................................failed
 Then click on submit button.................................................skipped
 When user click on purches page.............................................skipped
@@ -61,20 +45,12 @@ Then user validate the purches title........................................skip
 And user close the app......................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@placeholder='Username']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BSK1J2J', ip: '192.168.1.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
 	at omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)
-	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)
+	at StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)
 	at ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)
 ]]></failure>
     </testcase>

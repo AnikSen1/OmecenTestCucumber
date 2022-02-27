@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -16,46 +17,28 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import omecenTestCucumber.PageObjects.InvoicePage;
 import omecenTestCucumber.PageObjects.LoginPage;
 import omecenTestCucumber.PageObjects.PaymentPage;
+import omecenTestCucumber.base.BaseClass;
 
-public class BDDSteps {
+public class BDDSteps extends BaseClass {
 
 	
 	
 	WebDriver driver;
-	String Browser="chrome";
 	LoginPage lp;
 	InvoicePage ip;
 	PaymentPage pp;
 	
 	
 	@Given("^app is open$")
-	public void app_is_open() {
+	public void app_is_open() throws IOException {
+		openApp();
 
-
-		if (Browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver= new ChromeDriver();
-		}
-
-		else if (Browser.equalsIgnoreCase("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver= new FirefoxDriver();
-		}
-		else if (Browser.equalsIgnoreCase("IE")) {
-			WebDriverManager.iedriver().setup();
-			driver= new InternetExplorerDriver();
-		}else {System.out.println("diver is null");}
-		driver.get("https://inventory.omecen.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 	}
-
 	@When("^user enter userName and Password$")
-	public void user_enter_user_name_and_password() {
+	public void user_enter_user_name_and_password() throws IOException {
 		lp= new LoginPage(driver);
-		lp.userName("uname");
-		lp.pWord("pword");	
+		lp.userName(getProperties("uname"));
+		lp.pWord(getProperties("pword"));	
 	}
 
 	@Then("^click on submit button$")

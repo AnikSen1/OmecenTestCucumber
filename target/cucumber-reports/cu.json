@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1909452000,
+              "duration": 3123515800,
               "status": "passed"
             },
             "line": 5,
@@ -23,8 +23,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//input[@placeholder\u003d\u0027Username\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BSK1J2J\u0027, ip: \u0027192.168.1.52\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
-              "duration": 8043695700,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
+              "duration": 44844200,
               "status": "failed"
             },
             "line": 6,
@@ -36,6 +36,7 @@
           },
           {
             "result": {
+              "duration": 1000800,
               "status": "skipped"
             },
             "line": 7,
@@ -48,7 +49,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-06T20:16:41.361Z",
+        "start_timestamp": "2022-02-17T15:10:50.147Z",
         "line": 10,
         "name": "As a user I want to see New Invoice page",
         "description": "",
@@ -58,6 +59,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1159000,
               "status": "skipped"
             },
             "line": 11,
@@ -100,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2483042700,
+              "duration": 1064755000,
               "status": "passed"
             },
             "line": 5,
@@ -112,8 +114,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//input[@placeholder\u003d\u0027Username\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BSK1J2J\u0027, ip: \u0027192.168.1.52\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
-              "duration": 5731272400,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
+              "duration": 2999900,
               "status": "failed"
             },
             "line": 6,
@@ -125,6 +127,7 @@
           },
           {
             "result": {
+              "duration": 1076500,
               "status": "skipped"
             },
             "line": 7,
@@ -137,7 +140,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-06T20:16:51.380Z",
+        "start_timestamp": "2022-02-17T15:10:53.431Z",
         "line": 16,
         "name": "As a user I want to see Payments  page",
         "description": "",
@@ -158,6 +161,7 @@
           },
           {
             "result": {
+              "duration": 1089800,
               "status": "skipped"
             },
             "line": 18,
@@ -189,7 +193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1421226000,
+              "duration": 1216205100,
               "status": "passed"
             },
             "line": 5,
@@ -201,8 +205,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//input[@placeholder\u003d\u0027Username\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-BSK1J2J\u0027, ip: \u0027192.168.1.52\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:57)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
-              "duration": 5475980600,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)\r\n\tat omecenTestCucumber.PageObjects.LoginPage.userName(LoginPage.java:20)\r\n\tat StepDefinitions.BDDSteps.user_enter_user_name_and_password(BDDSteps.java:40)\r\n\tat ✽.user enter userName and Password(file:///C:/Users/Anikm/eclipse-workspace/omecenTestCucumber/src/test/resources/Features/background.feature:6)\r\n",
+              "duration": 1498500,
               "status": "failed"
             },
             "line": 6,
@@ -214,6 +218,7 @@
           },
           {
             "result": {
+              "duration": 998600,
               "status": "skipped"
             },
             "line": 7,
@@ -226,7 +231,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-06T20:16:59.611Z",
+        "start_timestamp": "2022-02-17T15:10:54.523Z",
         "line": 22,
         "name": "As a user I want to see Receipts  page",
         "description": "",
@@ -236,7 +241,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1070000,
+              "duration": 1478500,
               "status": "skipped"
             },
             "line": 23,
@@ -248,6 +253,7 @@
           },
           {
             "result": {
+              "duration": 1041900,
               "status": "skipped"
             },
             "line": 24,
@@ -259,6 +265,7 @@
           },
           {
             "result": {
+              "duration": 418400,
               "status": "skipped"
             },
             "line": 25,

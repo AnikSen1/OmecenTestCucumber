@@ -36,9 +36,7 @@ public WebElement signIn() {
 	signin.click();
     return signin;
 }
-		
-			
-		
+
 	}
 
 
